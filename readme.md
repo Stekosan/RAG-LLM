@@ -95,7 +95,7 @@ pip install -r requirements.txt
         Click on "Connect".
 
     Set Up the Environment on EC2:
-
+    
     # Switch to superuser
 sudo su
 
@@ -119,4 +119,16 @@ source myenv/bin/activate
 
 # Install necessary libraries
 pip install --no-cache-dir streamlit sentence-transformers pinecone-client openai==0.28 pdfplumber
+```
+
+    Configure and Run Your Application:
+```bash
+# Edit your Python file to add your API key
+nano <Your_pythonfile.py>
+
+# Run your script
+streamlit run <Your_pythonfile.py>
+
+# For continuous running of the instance even after closing the tab
+nohup python3 -m streamlit run <Your_pythonfile.py> &
 ```
