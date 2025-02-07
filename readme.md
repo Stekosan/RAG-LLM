@@ -119,7 +119,6 @@ source myenv/bin/activate
 
 # Install necessary libraries
 pip install --no-cache-dir streamlit sentence-transformers pinecone-client openai==0.28 pdfplumber
-```
 
     Configure and Run Your Application:
 ```bash
