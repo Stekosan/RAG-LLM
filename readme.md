@@ -68,3 +68,55 @@ pip install --upgrade pip
 # Install dependencies from requirements.txt
 pip install -r requirements.txt
 ```
+Deploying on AWS EC2
+
+    Launch EC2 Instance:
+
+        Go to the Amazon AWS console and search for "EC2".
+
+        Click on "Launch Instance".
+
+        Provide a name for your instance.
+
+        Select the instance type that suits your needs.
+
+    Configure Network Settings:
+
+        Click on "Edit" in the Network Settings section.
+
+        Add a security group rule with port range 8501 and set the source type to "Anywhere".
+
+        Click on "Launch Instance".
+
+    Connect to Your Instance:
+
+        Once the instance is launched, click on the instance ID.
+
+        Click on "Connect".
+
+    Set Up the Environment on EC2:
+
+    # Switch to superuser
+sudo su
+
+# Install git
+yum install git
+
+# Install Python3 and pip
+yum install python3-pip
+
+# Clone your repository
+git clone <your_repo_link>
+
+# Navigate to the project directory
+cd <directory_name>
+
+# Create a Python virtual environment
+python3 -m venv myenv
+
+# Activate the virtual environment
+source myenv/bin/activate
+
+# Install necessary libraries
+pip install --no-cache-dir streamlit sentence-transformers pinecone-client openai==0.28 pdfplumber
+```
