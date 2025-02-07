@@ -1,4 +1,4 @@
-## # RAG & LangChain Mastery Course
+## # RAG & LangChain Mastery Course forked from whyashthakker
 
 Transform your development skills with this comprehensive course on **Retrieval-Augmented Generation (RAG)** and **LangChain**. Whether you're a developer looking to break into AI or an experienced programmer aiming to master RAG, this course offers the perfect blend of theory and hands-on practice to help you build production-ready AI applications.
 
