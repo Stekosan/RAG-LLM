@@ -2,6 +2,16 @@
 
 Transform your development skills with this comprehensive course on **Retrieval-Augmented Generation (RAG)** and **LangChain**. Whether you're a developer looking to break into AI or an experienced programmer aiming to master RAG, this course offers the perfect blend of theory and hands-on practice to help you build production-ready AI applications.
 
+## About This Repository
+
+This repository is a fork of the original project created by **[Whyash Thakker](https://github.com/whyashthakker)**. All credit for the initial work goes to them. You can find the original repository here: [RAG by Whyash Thakker](https://github.com/whyashthakker/RAG).
+
+### Changes in This Fork
+- [Briefly describe any changes or additions you've made, if applicable.]
+- For example: "Added support for AWS deployment and updated the dependencies."
+
+---
+
 ## What You'll Learn
 - Build **three professional-grade chatbots**: Website, SQL, and Multimedia PDF.
 - Master **RAG architecture** and implementation from fundamentals to advanced techniques.
