@@ -67,8 +67,8 @@ pip install --upgrade pip
 
 # Install dependencies from requirements.txt
 pip install -r requirements.txt
-```
-Deploying on AWS EC2
+
+# Deploying on AWS EC2
 
     Launch EC2 Instance:
 
