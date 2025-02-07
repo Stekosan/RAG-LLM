@@ -121,7 +121,6 @@ source myenv/bin/activate
 pip install --no-cache-dir streamlit sentence-transformers pinecone-client openai==0.28 pdfplumber
 
     Configure and Run Your Application:
-```bash
 # Edit your Python file to add your API key
 nano <Your_pythonfile.py>
 
