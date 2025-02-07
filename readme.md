@@ -7,8 +7,7 @@ Transform your development skills with this comprehensive course on **Retrieval-
 This repository is a fork of the original project created by **[Whyash Thakker](https://github.com/whyashthakker)**. All credit for the initial work goes to them. You can find the original repository here: [RAG by Whyash Thakker](https://github.com/whyashthakker/RAG).
 
 ### Changes in This Fork
-- [Briefly describe any changes or additions you've made, if applicable.]
-- For example: "Added support for AWS deployment and updated the dependencies."
+- Added support for Azure deployment and updated the dependencies.
 
 ---
 
