@@ -4,14 +4,18 @@ from annoy import AnnoyIndex
 from sentence_transformers import SentenceTransformer
 import time
 
-#This function creates a FAISS index using the L2 (Euclidean) distance, adds the embeddings to the index, and performs a k-nearest neighbor search for the query vector.
+# This function creates a FAISS index using the L2 (Euclidean) distance, adds the embeddings to the index, and performs a k-nearest neighbor search for the query vector.
+
+
 def faiss_search(embeddings, query_vector, k):
     index = faiss.IndexFlatL2(embeddings.shape[1])
     index.add(embeddings)
     distances, indices = index.search(np.array([query_vector]), k)
     return distances[0], indices[0]
 
-#This function creates an Annoy index using angular (cosine) distance, adds embeddings to the index, builds the index with 10 trees, and performs a k-nearest neighbor search.
+# This function creates an Annoy index using angular (cosine) distance, adds embeddings to the index, builds the index with 10 trees, and performs a k-nearest neighbor search.
+
+
 def annoy_search(embeddings, query_vector, k):
     dimension = embeddings.shape[1]
     index = AnnoyIndex(dimension, 'angular')
@@ -20,6 +24,7 @@ def annoy_search(embeddings, query_vector, k):
     index.build(10)  # 10 trees - more trees gives higher precision when querying
     indices, distances = index.get_nns_by_vector(query_vector, k, include_distances=True)
     return distances, indices
+
 
 try:
     # Load a pre-trained model
