@@ -67,12 +67,14 @@ python3.11 -m venv myenv
 
 # Activate the virtual environment
 source myenv/bin/activate
+.\myenv\Scripts\activate - windows 
 
 # Install required packages
 pip install requests beautifulsoup4 langchain langchain-openai faiss-cpu numpy lxml openai
 
 # Upgrade pip
 pip install --upgrade pip
+python.exe -m pip install --upgrade pip
 
 # Install dependencies from requirements.txt
 pip install -r requirements.txt

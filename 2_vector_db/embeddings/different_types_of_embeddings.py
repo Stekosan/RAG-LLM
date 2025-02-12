@@ -22,7 +22,7 @@ def word_embeddings():
     # - min_count=1: Ignores all words with total frequency lower than this
     # - workers=4: Number of CPU cores to use for training
     print("Word Embedding for 'cat':", model.wv['cat'])
-
+    print("Word Embedding for 'dog':", model.wv['dog'])
 # Sentence Embeddings
 def sentence_embeddings():
     # SentenceTransformer is a library for state-of-the-art sentence embeddings
@@ -94,6 +94,21 @@ def audio_embeddings():
     print("Audio Embedding (MFCC):", mfcc_embedding)
 
 if __name__ == "__main__":
+    print("Word Embeddings:")
+    word_embeddings()
+    
+    print("\nSentence Embeddings:")
+    sentence_embeddings()
+    
+    print("\nImage Embeddings:")
+    image_embeddings()
+    
+    print("\nGraph Embeddings:")
+    graph_embeddings()
+    
+    print("\nAudio Embeddings:")
+    audio_embeddings()    
+    
     print("Word Embeddings:")
     word_embeddings()
     
